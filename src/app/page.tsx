@@ -8,7 +8,7 @@ import { useLoading } from "@/components/loadingContext";
 
 export default function LandingPage() {
   const { setPageLoaded } = useLoading();
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [_isLoaded, setIsLoaded] = useState(false);
   const MIN_LOAD_TIME = 3000;
   const backgroundImage = "/assets/images/cover-picture.jpg";
 
