@@ -3,12 +3,11 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useLoading } from "@/components/loadingContext";
 
 export default function LandingPage() {
   const { setPageLoaded } = useLoading();
-  const [_isLoaded, setIsLoaded] = useState(false);
   const MIN_LOAD_TIME = 3000;
   const backgroundImage = "/assets/images/cover-picture.jpg";
 
@@ -17,7 +16,6 @@ export default function LandingPage() {
       const img = new window.Image();
       img.src = backgroundImage;
       img.onload = () => {
-        setIsLoaded(true);
         resolve();
       };
       img.onerror = () => {
