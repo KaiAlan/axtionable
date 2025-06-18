@@ -62,7 +62,7 @@ export default function LandingPage() {
 
       {/* Headline */}
       <div className="flex items-center justify-center min-h-screen px-8">
-        <h1 className="absolute left-8 bottom-72 w-full text-4xl md:text-7xl font-bold text-white text-left text-wrap tracking-tight">
+        <h1 className="absolute left-8 bottom-40 md:bottom-60 w-full text-4xl md:text-7xl font-bold text-white text-left text-wrap tracking-tight">
           Grind. Growth. Gratitude.
         </h1>
         <Link
